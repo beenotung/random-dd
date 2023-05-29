@@ -11,8 +11,10 @@ if (!args.of) {
 
 args.bs ||= '512'
 args.count ||= '0'
+args.status ||= 'progress'
 
 let count = +args.count
+let reportInLoop = args.status === 'progress'
 
 function start() {
   if (count > 0) {
@@ -58,10 +60,12 @@ function write(cb) {
     } else {
       i++
       bytes += bs
-      let now = Date.now()
-      if (now >= nextReportTime) {
-        report()
-        nextReportTime = now + reportInterval
+      if (reportInLoop) {
+        let now = Date.now()
+        if (now >= nextReportTime) {
+          report()
+          nextReportTime = now + reportInterval
+        }
       }
       cb()
     }

@@ -39,6 +39,16 @@ Using without installation:
 npx -y random-dd of=file bs=1024000 count=500
 ```
 
+## Options
+
+`of`: output filename
+
+`bs`: number of bytes per write, default: 512
+
+`count`: number of writes, 0 for unlimited, default: 0
+
+`status`: `progress` to report per second, `none` to report only at the end, default: progress
+
 ## License
 
 This project is licensed with [BSD-2-Clause](./LICENSE)
