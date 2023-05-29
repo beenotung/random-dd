@@ -1,0 +1,32 @@
+{
+  "name": "random-dd",
+  "version": "1.0.4",
+  "description": "cross-platform `dd` implemented in node.js, to overcome performance penalty on windows.",
+  "keywords": [
+    "cli",
+    "dd",
+    "random",
+    "harddisk",
+    "speed test",
+    "disk speed",
+    "benchmark",
+    "cross-platform"
+  ],
+  "author": "Beeno Tung <aabbcc1241@yahoo.com.hk> (https://beeno-tung.surge.sh)",
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beenotung/random-dd.git"
+  },
+  "homepage": "https://github.com/beenotung/random-dd#readme",
+  "bugs": {
+    "url": "https://github.com/beenotung/random-dd/issues"
+  },
+  "main": "random-dd.js",
+  "bin": {
+    "random-dd": "random-dd.js"
+  },
+  "files": [
+    "random-dd.js"
+  ]
+}
