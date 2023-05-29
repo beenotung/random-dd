@@ -14,8 +14,8 @@ Test ran on a windows laptop (samsung penbook 9).
 
 Arguments: `if=/dev/random of=file bs=1048576 count=1024 status=progress`
 
-`dd`: 2.2MB/s
-`random-dd`: 79.0MB/s
+`dd`: 2.3MB/s
+`random-dd`: 96.4MB/s
 
 ## Installation (optional)
 
